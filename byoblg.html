@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background-size: cover;
+      color: black;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+      position:relative;
+      top: 100px;
+    }
+    img {
+      margin: 50px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 25px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(255, 0, 0, 1);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+      img {
+        width: 250;
+        height: 250;
+        }
+    }
+    button {
+        display: inline-block;
+        background-color: black;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 22px;
+        padding: 20px;
+        width: 100px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        }
+    body {
+      background-color: rgba(169, 169, 169, 1);  
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/wIjfLtd.jpeg" {
+    width = 500
+    height = 500
+    }
+    <h1></h1>
+    <ul>
+      <li><a href="#">About Tommy Lee Jones</a></li>
+      <li><a href="#">Filmography</a></li>
+      <li><a href="#">Subscribe Here!</a></li>
+      <li><a href="#">Links</a></li>
+    </ul>
+  </header>
+  <article>
+  <h2>Tommy Lee Jones Quote of the Day</h2>
+    <p>"Human beings are glorious and preposterous characters."</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Upcoming Projects</h2>
+    <p>The Burial is an upcoming film starring Tommy Lee Jones and Jamie Foxx. Its about a bankrupt funeral home owner decides to sue a rival businessman over a handshake deal gone wrong, the owner hires a flamboyant attorney to handle the case.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Top Forum Post</h2>
+    <p>i just assumed he always looked like he was in his 50s and up</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
